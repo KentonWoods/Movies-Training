@@ -4,6 +4,8 @@ This is the dataset I use across my Tableau and BI tutorials. It's built on fun 
 
 I went with movies because everyone has opinions about them. When you're building a dashboard on *Barbie* vs *Oppenheimer* or comparing Marvel's box office to A24's, you actually care what the numbers say. That makes learning stick.
 
+---
+
 ## What's in here
 
 There are five tables, all pre-joined and pre-calculated so you can connect Tableau directly without writing SQL.
@@ -18,16 +20,34 @@ There are five tables, all pre-joined and pre-calculated so you can connect Tabl
 
 **ACTOR_POWER_RANKINGS** — Actor-level aggregates. Total films, total and average worldwide gross, average scores, franchise vs original film split, and career span. Broken out by lead actor and lead actress. I use this for LOD expression tutorials where you want to compare an actor's average to a movie's performance to a genre's average.
 
+---
+
 ## Where the data comes from
 
-The core movie data — titles, studios, budgets, box office, rotten tomatoes scores, cast, directors — is sourced from publicly available information. The financials are approximate but close enough for dashboard work.
+The core movie data — titles, studios, budgets, box office, Rotten Tomatoes scores, cast, directors — is sourced from publicly available information. The financials are approximate but close enough for dashboard work.
 
 The time series data (weekly box office curves, monthly streaming numbers) is generated algorithmically from the real financial data. So a movie that grossed $700M domestic has a proportionally larger weekly curve than one that made $15M, and sequels drop off faster than prestige films — but the week-by-week numbers aren't exact actuals.
 
 Awards, marketing budgets, and studio targets are also generated but grounded in the real data.
 
+---
+
 ## How to use it
 
-Use the CSV exports in this folder if you'd rather skip the Snowflake connection.
+The CSV files in this repo are the easiest starting point. Connect Tableau directly to the CSVs, or load them into whatever database you're working with. Each file corresponds to one of the five tables above and is named to match.
 
+If you're loading them into your own database, the tables are designed to join on `movie_id`, so you can query across them or keep using them independently depending on what you're building.
 
+---
+
+## The YouTube channel
+
+These datasets are built to support tutorials on Tableau, dashboard design, and data storytelling. If you want to see them in action — or learn how to build the kind of dashboards they're designed for — that's what the channel is for.
+
+No fluff, no clickbait. Just practical content for people who take their work seriously.
+
+**[Subscribe on YouTube →](https://www.youtube.com/@WoodsAnalytics)**
+
+---
+
+*Questions, issues, or suggestions — open an issue or email me at woodsdataanalytics@gmail.com.*
