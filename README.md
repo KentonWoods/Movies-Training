@@ -51,3 +51,5 @@ No fluff, no clickbait. Just practical content for people who take their work se
 ---
 
 *Questions, issues, or suggestions — open an issue or email me at woodsdataanalytics@gmail.com.*
+
+*Connect on LinkedIn: [linkedin.com/in/kentonwoods](https://www.linkedin.com/in/kentonwoods/)*
